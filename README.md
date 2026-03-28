@@ -8,22 +8,22 @@ Teachers generate a QR code per session. Attendees scan it with their phone to m
 
 ## Apps
 
-| App | Tech | Description |
-|---|---|---|
-| `web` | Next.js + Tailwind | Teacher dashboard — manage courses, sessions, reports |
-| `backend` | NestJS | REST API — shared by web and mobile |
-| `mobile` | Flutter | Student app — QR scanner, attendance history |
+| App       | Tech               | Description                                           |
+| --------- | ------------------ | ----------------------------------------------------- |
+| `web`     | Next.js + Tailwind | Teacher dashboard — manage courses, sessions, reports |
+| `backend` | NestJS             | REST API — shared by web and mobile                   |
+| `mobile`  | Flutter            | Student app — QR scanner, attendance history          |
 
 ---
 
 ## Docs
 
-| Document | Description |
-|---|---|
-| [PRD](./docs/PRD.md) | What we're building and why |
-| [Architecture](./docs/ARCHITECTURE.md) | Stack overview, system diagram, project structure |
+| Document                                 | Description                                              |
+| ---------------------------------------- | -------------------------------------------------------- |
+| [PRD](./docs/PRD.md)                     | What we're building and why                              |
+| [Architecture](./docs/ARCHITECTURE.md)   | Stack overview, system diagram, project structure        |
 | [System Design](./docs/SYSTEM_DESIGN.md) | API endpoints, database schema, auth flow, Redis, Stripe |
-| [Deployment](./docs/DEPLOYMENT.md) | How to deploy every service, environments, CI/CD |
+| [Deployment](./docs/DEPLOYMENT.md)       | How to deploy every service, environments, CI/CD         |
 
 ---
 
@@ -98,12 +98,12 @@ flutter run
 
 ## Branch Strategy
 
-| Branch | Purpose | Auto-deploys to |
-|---|---|---|
-| `main` | Production — stable, live users | Vercel + Railway (production) |
-| `staging` | Pre-release testing | Vercel + Railway (staging) |
-| `dev` | Active development | — |
-| `feature/*` | Individual features | — |
+| Branch      | Purpose                         | Auto-deploys to               |
+| ----------- | ------------------------------- | ----------------------------- |
+| `main`      | Production — stable, live users | Vercel + Railway (production) |
+| `staging`   | Pre-release testing             | Vercel + Railway (staging)    |
+| `dev`       | Active development              | —                             |
+| `feature/*` | Individual features             | —                             |
 
 **Never push directly to `main`.** All work goes through `feature/* → dev → staging → main`.
 
@@ -133,4 +133,4 @@ flutter run
 
 ## License
 
-Private — all rights reserved.
+Private — All rights reserved.
