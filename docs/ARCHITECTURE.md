@@ -143,7 +143,8 @@ mobile/lib/
 
 | Table | Key Fields | Purpose |
 |---|---|---|
-| `users` | id, name, email, role, created_at | All app users |
+| `students` | id, legal_student_id , name ,phone_number, created_at | All app users |
+| `teachers`| id , name , email 
 | `courses` | id, teacher_id, name, subject_code, created_at | Courses created by teachers |
 | `course_enrollments` | id, course_id, student_id | Links students to courses |
 | `sessions` | id, course_id, teacher_id, date, start_time, end_time, qr_mode, location_lat, location_lng, location_radius_m, token, expires_at | Individual class sessions |

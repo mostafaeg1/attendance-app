@@ -33,7 +33,7 @@ Tracking attendance in courses, classes, and workshops is largely manual — pap
 
 ### 1.2 Solution
 
-A QR-code-based attendance SaaS platform for any teacher, lecturer, or instructor — regardless of institution. Teachers subscribe and generate a unique QR code per session. Attendees scan the code with their phone (via the Flutter app or a camera link) to mark themselves present. Teachers can add time and location constraints to prevent abuse. All data is stored centrally and available as reports.
+A QR-code-based attendance SaaS platform for teachers and  lecturers. Teachers subscribe and generate a unique QR code per session. Attendees scan the code with their phone (via the Flutter app or a camera link) to mark themselves present. Teachers can add time and location constraints to prevent abuse. All data is stored centrally and available as reports.
 
 ### 1.3 Goals
 
@@ -46,11 +46,7 @@ A QR-code-based attendance SaaS platform for any teacher, lecturer, or instructo
 
 ### 1.4 Out of Scope (v1.0)
 
-- Integration with LMS systems (e.g. Moodle, Canvas, Google Classroom)
-- Push notifications and email alerts
 - Organization/institution-wide admin panel *(future version)*
-- Late arrival tracking *(future version)*
-- Excuse / justification requests *(future version)*
 - Team/organization billing (B2B contracts) *(future version)*
 
 ---
@@ -59,7 +55,7 @@ A QR-code-based attendance SaaS platform for any teacher, lecturer, or instructo
 
 | Role | Description | Primary Platform | Pays? |
 |---|---|---|---|
-| Teacher / Lecturer / Instructor | Creates courses, manages sessions, views reports | Web (Next.js) | ✅ Yes (Free or Pro) |
+| Teacher / Lecturer  | Creates courses, manages sessions, views reports | Web (Next.js) | ✅ Yes (Free or Pro) |
 | Attendee / Student | Scans QR code to mark attendance | Flutter App or Camera Link | ❌ Always free |
 
 ---
