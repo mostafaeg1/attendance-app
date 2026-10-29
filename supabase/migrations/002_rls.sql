@@ -16,6 +16,9 @@ ALTER TABLE subscriptions ENABLE ROW LEVEL SECURITY;
 CREATE POLICY "users_select_own" ON users
   FOR SELECT USING (auth.uid() = id);
 
+CREATE POLICY "users_insert_own" ON users
+  FOR INSERT WITH CHECK (auth.uid() = id);
+
 CREATE POLICY "users_update_own" ON users
   FOR UPDATE USING (auth.uid() = id);
 
