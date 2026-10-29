@@ -11,7 +11,6 @@ Teachers generate a QR code per session. Attendees scan it with their phone to m
 | App       | Tech               | Description                                           |
 | --------- | ------------------ | ----------------------------------------------------- |
 | `web`     | Next.js + Tailwind | Teacher dashboard — manage courses, sessions, reports |
-| `backend` | NestJS             | REST API — shared by web and mobile                   |
 | `mobile`  | Flutter            | Student app — QR scanner, attendance history          |
 
 ---
@@ -30,7 +29,6 @@ Teachers generate a QR code per session. Attendees scan it with their phone to m
 ## Tech Stack
 
 - **Web** — Next.js (App Router), Tailwind CSS, Vercel
-- **Backend** — NestJS, Railway
 - **Mobile** — Flutter, App Store + Google Play
 - **Database** — Supabase (PostgreSQL + Auth + PgBouncer)
 - **Cache** — Upstash Redis
@@ -59,16 +57,13 @@ cd attendance-app
 ### 2. Install dependencies
 
 ```bash
-# Install root + web + backend dependencies
+# Install root + web dependencies
 npm install
 ```
 
 ### 3. Set up environment variables
 
 ```bash
-# Backend
-cp backend/.env.example backend/.env
-
 # Web
 cp web/.env.example web/.env.local
 ```
@@ -82,7 +77,7 @@ Go to your Supabase project → SQL Editor → paste the schema from [System Des
 ### 5. Start development servers
 
 ```bash
-# Run web + backend simultaneously
+# Run web
 npm run dev
 ```
 
@@ -114,7 +109,6 @@ flutter run
 ```
 /
 ├── web/              ← Next.js teacher dashboard
-├── backend/          ← NestJS REST API
 ├── mobile/           ← Flutter student app
 ├── packages/
 │   └── types/        ← Shared TypeScript types

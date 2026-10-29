@@ -1,8 +1,6 @@
 # QR Attendance App — Product Requirements Document
 
 > **Version:** 1.6 — Generalized from university to any course/teacher
-> **Date:** March 2026
-> **Status:** Draft
 > **Platform:** Web (Next.js) + Mobile (Flutter)
 > **Backend:** NestJS + Supabase (PostgreSQL)
 > **Business Model:** SaaS — per teacher subscription (Free + Pro tiers)
