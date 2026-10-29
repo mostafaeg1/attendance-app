@@ -1,1 +1,5 @@
-gi
+.DS_Store
+
+# Stray Supabase CLI state from running `supabase` inside web/ — the real
+# migrations live in the root supabase/ directory.
+web/supabase/
